@@ -11,7 +11,7 @@ for line in f:
     print (len(rowList ))
     if len(rowList) == 6:
         date, time, location, dept, amount, payType = rowList  #assign names
-        print ("{0}\t{1}".format(location, amount))
+        print ("{0}\t{1}".format(amount, location))
         o.write("{0}\t{1}\n".format(amount, location))
 f.close()
 o.close()
