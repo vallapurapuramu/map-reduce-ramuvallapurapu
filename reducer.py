@@ -1,7 +1,7 @@
 #Ramu Vallapurapu
 #Practice Reducer
 
-s = open("locationresult.txt","r")
+s = open("sort.txt","r")
 r = open("reduce.txt", "w")
 
 thisKey = ""
