@@ -3,7 +3,7 @@
 
 
 
-f = open("purchases.txt","r")  # open file, read-only
+f = open("reduce.txt","r")  # open file, read-only
 o = open("locationresult02.txt", "w") # open file, write
 for line in f:  
     rowList = line.strip().split("    ") 
@@ -11,7 +11,7 @@ for line in f:
     print (len(rowList ))
     if len(rowList) == 6:
         date, time, location, dept, amount, payType = rowList  #assign names
-        print ("{0}\t{1}".format(amount, location))
+        print ("{0}\t{1}".format(location, amount))
         o.write("{0}\t{1}\n".format(amount, location))
 f.close()
 o.close()
