@@ -12,7 +12,7 @@ This is practice for map and reduce
 - A ***Mapper Script*** extracts the movie name from each row in the dataset, which is used as a ***Key*** and a ***Value*** of Rating is assigned to each Key. This is given as input to the ***Sorter*** which sorts all the years in descending order. Based on the output of the Sorter, which is passed as input to the ***Reducer Script***, combines all the ratings.
 
 ## Powershell Command:
-- ***cat netflix_titles.csv | python 01mapper.py | python 02sorter.py | python 03reducer.py > output.txt***
+- ***cat netflix_titles.csv | python 01mapper.py | python 02sorter.py | python 03reducer.py > RAMUoutput.txt***
 
 ## Summary:
 - By examining the final output, I can Conclude that movies above 7 and below 8 rating are in high number.
